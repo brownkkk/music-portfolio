@@ -1,278 +1,201 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>FM802 ROCK FESTIVAL RADIO CRAZY 2025 感想</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f4f8ff;
-      color: #03396c;
-      line-height: 1.8;
-    }
+<meta charset="UTF-8">
+<title>RADIO CRAZY 2024 見たアーティスト</title>
 
-    header {
-      background: linear-gradient(135deg, #005bac, #4aa3df);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
+<style>
 
-    header h1 { margin: 0; font-size: 28px; }
-    header p { margin-top: 10px; font-size: 16px; font-weight: bold; }
-
-    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-
-    h2 { border-left: 6px solid #005bac; padding-left: 10px; margin-top: 50px; font-size: 22px; }
-    h3 { margin-top: 40px; color: #005bac; }
-
-    .artist-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 20px 0 40px; }
-    .artist-card {
-      background-color: #ffffff;
-      border: 2px solid #cce0f5;
-      border-radius: 12px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .artist-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 91, 172, 0.15); }
-    .artist-card a { text-decoration: none; color: #005bac; font-weight: bold; }
-    .artist-card a:hover { text-decoration: underline; }
-
-    .day-section { background-color: #ffffff; border-radius: 16px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.08); margin-bottom: 40px; }
-
-    footer { text-align: center; padding: 30px; color: #666; font-size: 14px; }
-
-    .youtube-wrap {
-      margin: 20px 0 40px;
-      border: 3px solid #cce0f5;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(0, 91, 172, 0.15);
-    }
-   .youtube-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+body{
+  font-family: sans-serif;
+  background:#f5f5f5;
+  margin:0;
+  padding:40px;
+  text-align:center;
 }
 
-.youtube-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}  
-
-.next-button {
-  text-align: center;
-  margin: 50px 0;
+h1{
+  margin-bottom:40px;
 }
 
-.next-button a {
-  display: inline-block;
-  background: #005bac;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
+h3{
+  margin-bottom:20px;
 }
 
-.next-button a:hover {
-  background: #003f7a;
-  transform: translateY(-2px);
+/* 日ごとのボックス */
+
+.day-list{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  margin-bottom:40px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
-.day-nav {
-  text-align: center;
-  background: #ffffff;
-  padding: 15px;
-  border-bottom: 2px solid #cce0f5;
+/* アーティスト並び */
+
+.artist-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
 }
 
-.day-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #005bac;
-  padding: 8px 18px;
-  border-radius: 20px;
-  transition: 0.2s;
+/* アーティストカード */
+
+.artist-card{
+  background:#fafafa;
+  padding:20px;
+  border-radius:10px;
+  transition:0.2s;
 }
 
-.day-nav a:hover {
-  background: #005bac;
-  color: white;
+.artist-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* 日付ナビゲーション */
-
-.day-nav {
-  text-align: center;
-  background: #ffffff;
-  padding: 15px;
-  border-bottom: 2px solid #cce0f5;
+.artist-card a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+  display:block;
 }
 
-.day-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #005bac;
-  padding: 8px 18px;
-  border-radius: 20px;
-  transition: 0.2s;
+/* 次の日ボタン */
+
+.day-nav{
+  margin-top:40px;
 }
 
-.day-nav a:hover {
-  background: #005bac;
-  color: white;
+.day-nav a{
+  display:inline-block;
+  padding:12px 25px;
+  background:#333;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
 }
 
-/* 前後ページボタン */
-
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0;
-}
-
-.page-nav a {
-  text-decoration: none;
-  background: #005bac;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.page-nav a:hover {
-  background: #003f7a;
+.day-nav a:hover{
+  background:#555;
 }
 
 </style>
 </head>
+
+<header> <h1>「FM802 ROCK FESTIVAL RADIO CRAZY 2025」に4日間通しで参加した感想</h1> <p><strong>こんにちは！音楽が好きな普通の学生です！</strong></p> </header> <main> <p>「FM802 ROCK FESTIVAL RADIO CRAZY 2025（通称：レディクレ）」に4日通しで参加してきました。私が実際に観たアーティストについて、1日ごとに感想を書いていこうと思います。まずは、4日間で観たアーティスト一覧です。</p>
+
 <body>
 
-<header>
-  <h1>「FM802 ROCK FESTIVAL RADIO CRAZY 2025」に4日間通しで参加した感想</h1>
-  <p><strong>こんにちは！音楽が好きな普通の学生です！</strong></p>
-</header>
+<h1>RADIO CRAZY 2024 見たアーティスト</h1>
 
-<main>
-  <p>「FM802 ROCK FESTIVAL RADIO CRAZY 2025（通称：レディクレ）」に4日通しで参加してきました。私が実際に観たアーティストについて、1日ごとに感想を書いていこうと思います。まずは、4日間で観たアーティスト一覧です。</p>
+<!-- 1日目 -->
 
-  <h2>アーティスト一覧</h2>
+<div class="day-list">
 
-  <!-- 1日目 -->
-  <h3>1日目（12月26日）</h3>
-  <div class="artist-box">
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Tele+music" target="_blank">🎧 Tele</a>
-  </div>
+<h3>1日目（12月26日）</h3>
 
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=WurtS" target="_blank">🎧 WurtS</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Chevon+band" target="_blank">🎧 Chevon</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=TenTwenty+band" target="_blank">🎧 TenTwenty</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=TOOBOE" target="_blank">🎧 TOOBOE</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=BUMP+OF+CHICKEN" target="_blank">🎧 BUMP OF CHICKEN</a>
-  </div>
-
- <!-- 2日目 -->
-<h3>2日目（12月27日）</h3>
 <div class="artist-box">
 
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=フレデリック+バンド" target="_blank">🎧 フレデリック</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=羊文学" target="_blank">🎧 羊文学</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=sumika" target="_blank">🎧 sumika</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=クリープハイプ" target="_blank">🎧 クリープハイプ</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=indigo+la+End" target="_blank">🎧 indigo la End</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=サカナクション" target="_blank">🎧 サカナクション</a>
-  </div>
-
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=Tele+music" target="_blank">🎧 Tele</a>
 </div>
 
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=WurtS" target="_blank">🎧 WurtS</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=Chevon+band" target="_blank">🎧 Chevon</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=TenTwenty+band" target="_blank">🎧 TenTwenty</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=TOOBOE" target="_blank">🎧 TOOBOE</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=BUMP+OF+CHICKEN" target="_blank">🎧 BUMP OF CHICKEN</a>
+</div>
+
+</div>
+</div>
+
+<!-- 2日目 -->
+
+<div class="day-list">
+
+<h3>2日目（12月27日）</h3>
+
+<div class="artist-box">
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=フレデリック" target="_blank">🎧 フレデリック</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=羊文学" target="_blank">🎧 羊文学</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=sumika" target="_blank">🎧 sumika</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=クリープハイプ" target="_blank">🎧 クリープハイプ</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=indigo+la+End" target="_blank">🎧 indigo la End</a>
+</div>
+
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=サカナクション" target="_blank">🎧 サカナクション</a>
+</div>
+
+</div>
+</div>
 
 <!-- 3日目 -->
+
+<div class="day-list">
+
 <h3>3日目（12月28日）</h3>
+
 <div class="artist-box">
 
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=PEOPLE+1" target="_blank">🎧 PEOPLE 1</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=ハンブレッダーズ" target="_blank">🎧 ハンブレッダーズ</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Saucy+Dog" target="_blank">🎧 Saucy Dog</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Alexandros+バンド" target="_blank">🎧 [Alexandros]</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=SUPER+BEAVER" target="_blank">🎧 SUPER BEAVER</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Vaundy" target="_blank">🎧 Vaundy</a>
-  </div>
-
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=PEOPLE1" target="_blank">🎧 PEOPLE1</a>
 </div>
 
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=ハンブレッダーズ" target="_blank">🎧 ハンブレッダーズ</a>
+</div>
 
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=Saucy+Dog" target="_blank">🎧 Saucy Dog</a>
+</div>
 
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=Alexandros+band" target="_blank">🎧 ［Alexandros］</a>
+</div>
 
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=SUPER+BEAVER" target="_blank">🎧 SUPER BEAVER</a>
+</div>
 
-
-
-
-
-
-
-
-
-
-
+<div class="artist-card">
+<a href="https://www.youtube.com/results?search_query=Vaundy" target="_blank">🎧 Vaundy</a>
+</div>
 
 </div>
+</div>
+
+</body>
+</html>
   <h2><strong>1日目（12月26日）</strong></h2>
   <div class="day-section">
     <h3>・Tele</h3>

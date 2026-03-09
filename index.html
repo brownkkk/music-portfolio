@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>FM802 ROCK FESTIVAL RADIO CRAZY 2025 感想</title>
   <style>
@@ -51,8 +52,43 @@
       overflow: hidden;
       box-shadow: 0 6px 16px rgba(0, 91, 172, 0.15);
     }
-    .youtube-wrap iframe { width: 100%; height: 315px; border: none; }
-  </style>
+   .youtube-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtube-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}  
+
+.next-button {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.next-button a {
+  display: inline-block;
+  background: #005bac;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.next-button a:hover {
+  background: #003f7a;
+  transform: translateY(-2px);
+}
+
+
+</style>
 </head>
 <body>
 
@@ -69,14 +105,30 @@
   <!-- 1日目 -->
   <h3>1日目（12月26日）</h3>
   <div class="artist-box">
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=Tele+music" target="_blank">Tele</a></div>
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=WurtS" target="_blank">WurtS</a></div>
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=Chevon+band" target="_blank">Chevon</a></div>
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=TenTwenty+band" target="_blank">TenTwenty</a></div>
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=TOOBOE" target="_blank">TOOBOE</a></div>
-    <div class="artist-card"><a href="https://www.youtube.com/results?search_query=BUMP+OF+CHICKEN" target="_blank">BUMP OF CHICKEN</a></div>
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=Tele+music" target="_blank">🎧 Tele</a>
   </div>
 
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=WurtS" target="_blank">🎧 WurtS</a>
+  </div>
+
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=Chevon+band" target="_blank">🎧 Chevon</a>
+  </div>
+
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=TenTwenty+band" target="_blank">🎧 TenTwenty</a>
+  </div>
+
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=TOOBOE" target="_blank">🎧 TOOBOE</a>
+  </div>
+
+  <div class="artist-card">
+    <a href="https://www.youtube.com/results?search_query=BUMP+OF+CHICKEN" target="_blank">🎧 BUMP OF CHICKEN</a>
+  </div>
+</div>
   <h2><strong>1日目（12月26日）</strong></h2>
   <div class="day-section">
     <h3>・Tele</h3>
@@ -123,10 +175,28 @@
   </iframe>
 </div>
 
-    <!-- ここに2日目〜4日目も同じ形式で続ける -->
+
+<h3>・TOOBOE</h3>
+<p>
+今回が初めて（多分）のレディクレ出演だったTOOBOE。5号館ステージだったので、小さい箱で観ることができました。
+「錠剤」「心臓」「痛いの痛いの飛んでいけ」などのメジャー曲から、新曲「あなたは怪物」まで聴くことができました。
+個人的に「敗北」が一番好きなので、イントロが始まった瞬間に思わずガッツポーズ（笑）。
+今回のJohnさんも安定の便所サンダルでしたが、それを忘れさせるほどの個性的な歌声とリズム感が本当にかっこよかったです。
+</p>
+
+<div class="youtube-wrap">
+  <iframe
+    src="https://www.youtube.com/embed/x6H6qYJp8Q8"
+    title="TOOBOE – 錠剤 (Music Video)"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
   </div>
 </main>
-
+<div class="next-button">
+  <a href="day2.html">▶ 2日目を見る</a>
+</div>
 <footer>
   © 2025 RADIO CRAZY 感想ページ
 </footer>

@@ -1,3 +1,5 @@
+day2.html
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -87,73 +89,6 @@
   transform: translateY(-2px);
 }
 
-.day-nav {
-  text-align: center;
-  background: #ffffff;
-  padding: 15px;
-  border-bottom: 2px solid #cce0f5;
-}
-
-.day-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #005bac;
-  padding: 8px 18px;
-  border-radius: 20px;
-  transition: 0.2s;
-}
-
-.day-nav a:hover {
-  background: #005bac;
-  color: white;
-}
-
-/* 日付ナビゲーション */
-
-.day-nav {
-  text-align: center;
-  background: #ffffff;
-  padding: 15px;
-  border-bottom: 2px solid #cce0f5;
-}
-
-.day-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #005bac;
-  padding: 8px 18px;
-  border-radius: 20px;
-  transition: 0.2s;
-}
-
-.day-nav a:hover {
-  background: #005bac;
-  color: white;
-}
-
-/* 前後ページボタン */
-
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0;
-}
-
-.page-nav a {
-  text-decoration: none;
-  background: #005bac;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.page-nav a:hover {
-  background: #003f7a;
-}
 
 </style>
 </head>
@@ -195,83 +130,6 @@
   <div class="artist-card">
     <a href="https://www.youtube.com/results?search_query=BUMP+OF+CHICKEN" target="_blank">🎧 BUMP OF CHICKEN</a>
   </div>
-
- <!-- 2日目 -->
-<h3>2日目（12月27日）</h3>
-<div class="artist-box">
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=フレデリック+バンド" target="_blank">🎧 フレデリック</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=羊文学" target="_blank">🎧 羊文学</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=sumika" target="_blank">🎧 sumika</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=クリープハイプ" target="_blank">🎧 クリープハイプ</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=indigo+la+End" target="_blank">🎧 indigo la End</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=サカナクション" target="_blank">🎧 サカナクション</a>
-  </div>
-
-</div>
-
-
-<!-- 3日目 -->
-<h3>3日目（12月28日）</h3>
-<div class="artist-box">
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=PEOPLE+1" target="_blank">🎧 PEOPLE 1</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=ハンブレッダーズ" target="_blank">🎧 ハンブレッダーズ</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Saucy+Dog" target="_blank">🎧 Saucy Dog</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Alexandros+バンド" target="_blank">🎧 [Alexandros]</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=SUPER+BEAVER" target="_blank">🎧 SUPER BEAVER</a>
-  </div>
-
-  <div class="artist-card">
-    <a href="https://www.youtube.com/results?search_query=Vaundy" target="_blank">🎧 Vaundy</a>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
   <h2><strong>1日目（12月26日）</strong></h2>
   <div class="day-section">
@@ -338,13 +196,16 @@
 </div>
   </div>
 </main>
-<div class="next-button">
-  <a href="day2.html">▶ 2日目を見る</a>
+<div class="page-nav">
+
+<a class="prev" href="day1.html">◀ 1日目に戻る</a>
+
+<a class="next" href="day3.html">▶ 3日目を見る</a>
+
 </div>
 <footer>
   © 2025 RADIO CRAZY 感想ページ
 </footer>
 </body>
 </html>
-
 
